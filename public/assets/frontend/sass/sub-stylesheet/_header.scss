@@ -1,0 +1,144 @@
+
+.header {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: 20% 85%;
+    height: 170px;
+    @include breakpoint(lg){
+    	padding: 0px 100px;
+    	height: 230px;
+    }
+    @include breakpoint(xxl-desktop){
+    	height: 310px;
+    	background-position: 20% 85%;
+    }
+    .navbar {
+    	padding: 0;
+    }
+    .navbar-toggler {
+    	width: 40px;
+	    height: 35px;
+	    background-color: #ec1c24;
+	    border: none;
+	    outline: none;
+	    position: absolute;
+	    margin-right: 20px;
+	    top: 35px;
+	    right: 0;
+    	span {
+    		width: 70%;
+    		height: 2px;
+    		background-color: transparent;
+    		position: absolute;
+    		left: 50%;
+    		top: 50%;
+    		margin-left: -35%;
+    		margin-top: -1px;
+    		transition: all 0.3s ease;
+
+    		&:after {
+    			content: '';
+    			position: absolute;
+    			left: 0;
+    			top: 0;
+    			width: 100%;
+    			height: 100%;
+    			background-color: #fff;
+    			// margin-top: -9px;
+    			transform: rotate(-45deg);
+    			transition: all 0.3s ease;
+    		}
+    		&:before {
+    			content: '';
+    			position: absolute;
+    			left: 0;
+    			top: 0;
+    			width: 100%;
+    			height: 100%;
+    			background-color: #fff;
+    			transform: rotate(45deg);
+    			transition: all 0.3s ease;
+    			// margin-top: 9px;
+    		}
+    	}
+    	&.collapsed {
+    		span {
+    			background-color: #fff;
+    			&:after {
+    				margin-top: -7px;
+    				transform: rotate(0deg);
+    			}
+    			&:before {
+    				margin-top: 7px;
+    				transform: rotate(0deg);
+    			}
+    		}
+    	}
+    }
+    &.about {
+		height: 100px;
+		background-position: 20% 40%;
+		@include breakpoint(lg){
+	    	height: 130px;
+			background-position: 20% 40%;
+	    }
+		@include breakpoint(xxl-desktop){
+	    	height: 200px;
+			background-position: 20% 40%;
+	    }
+    }
+}
+.logo {
+	display: block;
+	img {
+		width: 40%;
+		margin-left: 10px;
+	}
+	@include breakpoint(lg){
+		img {
+			width: 65%;
+			margin-left: 0;
+		}
+	}
+	@include breakpoint(xxl-desktop){
+		img {
+			width: 90%;
+		}
+	}
+}
+
+.menu {
+	background-color: #52b748;
+	position: relative;
+    z-index: 2;
+	li {
+		a {
+			font-size: 26px;
+			font-weight: 600;
+			padding: 15px 45px;
+			display: block;
+			text-transform: uppercase;
+			color: #fff;
+			@include transition(0.3s);
+			&:hover {
+				color: #ec1c24;
+			}
+		}
+	}
+	@include breakpoint(lg){
+		background-color: transparent;
+		li {
+			a {
+				padding: 10px 20px;
+			}
+		}
+	}
+}
+
+.contact-modal {
+	max-width: 800px;
+	width: 90%;
+	.footer-widget .contact-form textarea {
+		min-height: 100px;
+	}
+}

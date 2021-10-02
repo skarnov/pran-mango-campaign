@@ -1,0 +1,17 @@
+
+
+.section-header {
+	padding-bottom: 40px;
+	h2 {
+		margin-bottom: 0;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.container-sm {
+	@include breakpoint(xl){
+		max-width: 800px;
+	}
+}

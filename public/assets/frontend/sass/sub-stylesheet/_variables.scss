@@ -1,0 +1,44 @@
+$bootstrap-sass-asset-helper: false !default;
+//
+// Variables
+// --------------------------------------------------
+@font-face {
+		font-family: 'chandrabatimjbold';
+    src: url('../fonts/chandrabatimj_bold-webfont.woff2') format('woff2'),
+         url('../fonts/chandrabatimj_bold-webfont.woff') format('woff');
+         font-weight: normal;
+    	font-style: normal;
+		}
+@font-face {
+    font-family: 'kalpurushregular';
+    src: url('../fonts/kalpurush-webfont.woff2') format('woff2'),
+         url('../fonts/kalpurush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//== Colors
+$ff-bangla: 'kalpurushregular';
+$title-color: #2e3c40;
+$subtitle-color: #151a1b;
+$desc-color: #33414a;
+$base-color1: #ff6360;
+$base-color2: #ff6360;
+$bg-ash-color: #f9f9f9;
+$border-color: #ececec;
+$white: #fff;
+$black: #000;
+$meta-color: #8a8a8a;
+
+//== Typography
+$fs-base:   15px !default;
+$fs-large:	16px; 
+$fs-small: 	14px;
+$fs-h1:		48px;
+$fs-h2: 	36px;
+$fs-h3: 	30px;		
+$fs-h4: 	24px;	
+$fs-h5: 	20px;	
+$fs-h6: 	18px;
+
